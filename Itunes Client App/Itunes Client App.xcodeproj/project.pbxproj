@@ -12,6 +12,7 @@
 		96A64FD2292538750017AA3F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A64FD1292538750017AA3F /* MainViewController.swift */; };
 		96A64FD7292538760017AA3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A64FD6292538760017AA3F /* Assets.xcassets */; };
 		96A64FDA292538760017AA3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A64FD8292538760017AA3F /* LaunchScreen.storyboard */; };
+		96A64FED29254A1F0017AA3F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A64FEB29254A1F0017AA3F /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		96A64FD6292538760017AA3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96A64FD9292538760017AA3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96A64FDB292538760017AA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A64FEC29254A1F0017AA3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = Base.lproj/MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		96A64FEA29253AD00017AA3F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				96A64FEB29254A1F0017AA3F /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A64FD2292538750017AA3F /* MainViewController.swift in Sources */,
+				96A64FED29254A1F0017AA3F /* MainView.swift in Sources */,
 				96A64FCE292538750017AA3F /* AppDelegate.swift in Sources */,
 				96A64FD0292538750017AA3F /* SceneDelegate.swift in Sources */,
 			);
@@ -221,6 +225,14 @@
 				96A64FD9292538760017AA3F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		96A64FEB29254A1F0017AA3F /* MainView.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96A64FEC29254A1F0017AA3F /* Base */,
+			);
+			name = MainView.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
