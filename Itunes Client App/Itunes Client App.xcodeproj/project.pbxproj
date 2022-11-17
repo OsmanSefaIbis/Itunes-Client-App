@@ -12,6 +12,9 @@
 		96A64FD2292538750017AA3F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A64FD1292538750017AA3F /* MainViewController.swift */; };
 		96A64FD7292538760017AA3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A64FD6292538760017AA3F /* Assets.xcassets */; };
 		96A64FDA292538760017AA3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A64FD8292538760017AA3F /* LaunchScreen.storyboard */; };
+		96A64FF129254E260017AA3F /* ItunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A64FF029254E260017AA3F /* ItunesAPI.swift */; };
+		96A64FF429255C4E0017AA3F /* PodcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A64FF329255C4E0017AA3F /* PodcastResponse.swift */; };
+		96A64FF729255D6C0017AA3F /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A64FF629255D6C0017AA3F /* Podcast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		96A64FD6292538760017AA3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96A64FD9292538760017AA3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96A64FDB292538760017AA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A64FF029254E260017AA3F /* ItunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAPI.swift; sourceTree = "<group>"; };
+		96A64FF329255C4E0017AA3F /* PodcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResponse.swift; sourceTree = "<group>"; };
+		96A64FF629255D6C0017AA3F /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		96A64FE1292539070017AA3F /* App */ = {
 			isa = PBXGroup;
 			children = (
+				96A64FEE29254DE10017AA3F /* Core */,
 				96A64FE7292539CA0017AA3F /* Plist */,
 				96A64FE6292539B80017AA3F /* Views */,
 				96A64FE5292539A50017AA3F /* Assets */,
@@ -123,17 +130,35 @@
 		96A64FE929253AA00017AA3F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				96A64FEA29253AD00017AA3F /* View */,
+				96A64FF229255BED0017AA3F /* Model */,
 				96A64FE829253A5E0017AA3F /* Controller */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		96A64FEA29253AD00017AA3F /* View */ = {
+		96A64FEE29254DE10017AA3F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				96A64FEF29254E000017AA3F /* Network */,
 			);
-			path = View;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		96A64FEF29254E000017AA3F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				96A64FF029254E260017AA3F /* ItunesAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		96A64FF229255BED0017AA3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96A64FF329255C4E0017AA3F /* PodcastResponse.swift */,
+				96A64FF629255D6C0017AA3F /* Podcast.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A64FF429255C4E0017AA3F /* PodcastResponse.swift in Sources */,
+				96A64FF129254E260017AA3F /* ItunesAPI.swift in Sources */,
+				96A64FF729255D6C0017AA3F /* Podcast.swift in Sources */,
 				96A64FD2292538750017AA3F /* MainViewController.swift in Sources */,
 				96A64FCE292538750017AA3F /* AppDelegate.swift in Sources */,
 				96A64FD0292538750017AA3F /* SceneDelegate.swift in Sources */,
